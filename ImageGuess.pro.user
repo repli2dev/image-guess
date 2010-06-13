@@ -1,0 +1,533 @@
+<!DOCTYPE QtCreatorProject>
+<qtcreator>
+ <data>
+  <variable>RunConfiguration0-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CommandLineArguments</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-ProFile</variable>
+  <value type="QString">ImageGuess.pro</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-RunConfiguration.name</variable>
+  <value type="QString">ImageGuess</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UseDyldImageSuffix</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UseTerminal</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserSetName</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserSetWorkingDirectory</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserWorkingDirectory</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-type</variable>
+  <value type="QString">Qt4ProjectManager.Qt4RunConfiguration</value>
+ </data>
+ <data>
+  <variable>activeRunConfiguration</variable>
+  <value type="int">0</value>
+ </data>
+ <data>
+  <variable>activebuildconfiguration</variable>
+  <value type="QString">Release</value>
+ </data>
+ <data>
+  <variable>buildConfiguration-Debug</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <value key="QtVersionId" type="int">0</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="addQDumper" type=""></value>
+   <value key="buildConfiguration" type="int">2</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildConfiguration-Release</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+   <value key="QtVersionId" type="int">0</value>
+   <value key="addQDumper" type=""></value>
+   <value key="buildConfiguration" type="int">0</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">ANT_HOME=/usr/share/java/apache-ant</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Z6SyP0b4zE,guid=60c7b8ac525af36398c75ab70000002a</value>
+    <value type="QString">DE=gnome</value>
+    <value type="QString">DESKTOP_SESSION=kde</value>
+    <value type="QString">DISPLAY=:0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">EDITOR=nano</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-Hr9974/S.gpg-agent:3826:1</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">GS_LIB=/home/jan/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/jan/.gtkrc-2.0::/home/jan/.kde4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/jan/.gtkrc::/home/jan/.kde4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/jan</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">J2REDIR=/usr/lib/jvm/java-6-openjdk/jre</value>
+    <value type="QString">J2SDKDIR=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">JAVA_HOME=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=500</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=cs_CZ.utf8</value>
+    <value type="QString">LANGUAGE=</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LESS_TERMCAP_mb=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_md=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_me=[0m</value>
+    <value type="QString">LESS_TERMCAP_se=[0m</value>
+    <value type="QString">LESS_TERMCAP_so=[01;44;33m</value>
+    <value type="QString">LESS_TERMCAP_ue=[0m</value>
+    <value type="QString">LESS_TERMCAP_us=[01;32m</value>
+    <value type="QString">LOGNAME=jan</value>
+    <value type="QString">LS_COLORS=</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">OOO_FORCE_DESKTOP=gnome</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-jan</value>
+    <value type="QString">PATH=/usr/bin:/opt/wine/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/share/java/apache-ant/bin:/opt/kde/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/jan/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/jan/.kde4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/Uran:@/tmp/.ICE-unix/3880,unix/Uran:/tmp/.ICE-unix/3880</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=3829</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-UtVUoK3828/agent.3828</value>
+    <value type="QString">USER=jan</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
+    <value type="QString">XCURSOR_THEME=Human</value>
+    <value type="QString">XDG_CACHE_HOME=/home/jan/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/jan/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/opt/kde/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/jan/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=931900f06eea8f303cdf6ed64a8e4f57-1276406979.608407-642186257</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">/home/jan/TEMP/ImageGuess/ImageGuess/ImageGuess.pro</value>
+    <value type="QString">-spec</value>
+    <value type="QString">linux-g++-64</value>
+    <value type="QString">-r</value>
+    <value type="QString">CONFIG+=debug</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/jan/TEMP/ImageGuess/ImageGuess</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">ANT_HOME=/usr/share/java/apache-ant</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Z6SyP0b4zE,guid=60c7b8ac525af36398c75ab70000002a</value>
+    <value type="QString">DE=gnome</value>
+    <value type="QString">DESKTOP_SESSION=kde</value>
+    <value type="QString">DISPLAY=:0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">EDITOR=nano</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-Hr9974/S.gpg-agent:3826:1</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">GS_LIB=/home/jan/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/jan/.gtkrc-2.0::/home/jan/.kde4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/jan/.gtkrc::/home/jan/.kde4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/jan</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">J2REDIR=/usr/lib/jvm/java-6-openjdk/jre</value>
+    <value type="QString">J2SDKDIR=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">JAVA_HOME=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=500</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=cs_CZ.utf8</value>
+    <value type="QString">LANGUAGE=</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LESS_TERMCAP_mb=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_md=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_me=[0m</value>
+    <value type="QString">LESS_TERMCAP_se=[0m</value>
+    <value type="QString">LESS_TERMCAP_so=[01;44;33m</value>
+    <value type="QString">LESS_TERMCAP_ue=[0m</value>
+    <value type="QString">LESS_TERMCAP_us=[01;32m</value>
+    <value type="QString">LOGNAME=jan</value>
+    <value type="QString">LS_COLORS=</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">OOO_FORCE_DESKTOP=gnome</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-jan</value>
+    <value type="QString">PATH=/usr/bin:/opt/wine/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/share/java/apache-ant/bin:/opt/kde/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/jan/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/jan/.kde4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/Uran:@/tmp/.ICE-unix/3880,unix/Uran:/tmp/.ICE-unix/3880</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=3829</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-UtVUoK3828/agent.3828</value>
+    <value type="QString">USER=jan</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
+    <value type="QString">XCURSOR_THEME=Human</value>
+    <value type="QString">XDG_CACHE_HOME=/home/jan/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/jan/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/opt/kde/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/jan/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=931900f06eea8f303cdf6ed64a8e4f57-1276406979.608407-642186257</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/jan/TEMP/ImageGuess/ImageGuess</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">ANT_HOME=/usr/share/java/apache-ant</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Z6SyP0b4zE,guid=60c7b8ac525af36398c75ab70000002a</value>
+    <value type="QString">DE=gnome</value>
+    <value type="QString">DESKTOP_SESSION=kde</value>
+    <value type="QString">DISPLAY=:0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">EDITOR=nano</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-Hr9974/S.gpg-agent:3826:1</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">GS_LIB=/home/jan/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/jan/.gtkrc-2.0::/home/jan/.kde4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/jan/.gtkrc::/home/jan/.kde4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/jan</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">J2REDIR=/usr/lib/jvm/java-6-openjdk/jre</value>
+    <value type="QString">J2SDKDIR=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">JAVA_HOME=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=500</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=cs_CZ.utf8</value>
+    <value type="QString">LANGUAGE=</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LESS_TERMCAP_mb=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_md=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_me=[0m</value>
+    <value type="QString">LESS_TERMCAP_se=[0m</value>
+    <value type="QString">LESS_TERMCAP_so=[01;44;33m</value>
+    <value type="QString">LESS_TERMCAP_ue=[0m</value>
+    <value type="QString">LESS_TERMCAP_us=[01;32m</value>
+    <value type="QString">LOGNAME=jan</value>
+    <value type="QString">LS_COLORS=</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">OOO_FORCE_DESKTOP=gnome</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-jan</value>
+    <value type="QString">PATH=/usr/bin:/opt/wine/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/share/java/apache-ant/bin:/opt/kde/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/jan/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/jan/.kde4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/Uran:@/tmp/.ICE-unix/3880,unix/Uran:/tmp/.ICE-unix/3880</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=3829</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-UtVUoK3828/agent.3828</value>
+    <value type="QString">USER=jan</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
+    <value type="QString">XCURSOR_THEME=Human</value>
+    <value type="QString">XDG_CACHE_HOME=/home/jan/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/jan/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/opt/kde/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/jan/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=931900f06eea8f303cdf6ed64a8e4f57-1276406979.608407-642186257</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">true</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">clean</value>
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/jan/TEMP/ImageGuess/ImageGuess</value>
+   <value key="cleanConfig" type="bool">true</value>
+   <valuelist key="makeargs" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">ANT_HOME=/usr/share/java/apache-ant</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Z6SyP0b4zE,guid=60c7b8ac525af36398c75ab70000002a</value>
+    <value type="QString">DE=gnome</value>
+    <value type="QString">DESKTOP_SESSION=kde</value>
+    <value type="QString">DISPLAY=:0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">EDITOR=nano</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-Hr9974/S.gpg-agent:3826:1</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">GS_LIB=/home/jan/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/jan/.gtkrc-2.0::/home/jan/.kde4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/jan/.gtkrc::/home/jan/.kde4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/jan</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">J2REDIR=/usr/lib/jvm/java-6-openjdk/jre</value>
+    <value type="QString">J2SDKDIR=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">JAVA_HOME=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=500</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=cs_CZ.utf8</value>
+    <value type="QString">LANGUAGE=</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LESS_TERMCAP_mb=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_md=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_me=[0m</value>
+    <value type="QString">LESS_TERMCAP_se=[0m</value>
+    <value type="QString">LESS_TERMCAP_so=[01;44;33m</value>
+    <value type="QString">LESS_TERMCAP_ue=[0m</value>
+    <value type="QString">LESS_TERMCAP_us=[01;32m</value>
+    <value type="QString">LOGNAME=jan</value>
+    <value type="QString">LS_COLORS=</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">OOO_FORCE_DESKTOP=gnome</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-jan</value>
+    <value type="QString">PATH=/usr/bin:/opt/wine/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/share/java/apache-ant/bin:/opt/kde/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/jan/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/jan/.kde4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/Uran:@/tmp/.ICE-unix/3880,unix/Uran:/tmp/.ICE-unix/3880</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=3829</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-UtVUoK3828/agent.3828</value>
+    <value type="QString">USER=jan</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
+    <value type="QString">XCURSOR_THEME=Human</value>
+    <value type="QString">XDG_CACHE_HOME=/home/jan/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/jan/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/opt/kde/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/jan/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=931900f06eea8f303cdf6ed64a8e4f57-1276406979.608407-642186257</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">/home/jan/TEMP/ImageGuess/ImageGuess/ImageGuess.pro</value>
+    <value type="QString">-spec</value>
+    <value type="QString">linux-g++-64</value>
+    <value type="QString">-r</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/jan/TEMP/ImageGuess/ImageGuess</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">ANT_HOME=/usr/share/java/apache-ant</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Z6SyP0b4zE,guid=60c7b8ac525af36398c75ab70000002a</value>
+    <value type="QString">DE=gnome</value>
+    <value type="QString">DESKTOP_SESSION=kde</value>
+    <value type="QString">DISPLAY=:0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">EDITOR=nano</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-Hr9974/S.gpg-agent:3826:1</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">GS_LIB=/home/jan/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/jan/.gtkrc-2.0::/home/jan/.kde4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/jan/.gtkrc::/home/jan/.kde4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/jan</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">J2REDIR=/usr/lib/jvm/java-6-openjdk/jre</value>
+    <value type="QString">J2SDKDIR=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">JAVA_HOME=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=500</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=cs_CZ.utf8</value>
+    <value type="QString">LANGUAGE=</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LESS_TERMCAP_mb=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_md=[01;31m</value>
+    <value type="QString">LESS_TERMCAP_me=[0m</value>
+    <value type="QString">LESS_TERMCAP_se=[0m</value>
+    <value type="QString">LESS_TERMCAP_so=[01;44;33m</value>
+    <value type="QString">LESS_TERMCAP_ue=[0m</value>
+    <value type="QString">LESS_TERMCAP_us=[01;32m</value>
+    <value type="QString">LOGNAME=jan</value>
+    <value type="QString">LS_COLORS=</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">OOO_FORCE_DESKTOP=gnome</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-jan</value>
+    <value type="QString">PATH=/usr/bin:/opt/wine/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/share/java/apache-ant/bin:/opt/kde/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/jan/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/jan/.kde4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/Uran:@/tmp/.ICE-unix/3880,unix/Uran:/tmp/.ICE-unix/3880</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=3829</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-UtVUoK3828/agent.3828</value>
+    <value type="QString">USER=jan</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">WINELOADER=/opt/wine/bin/wine</value>
+    <value type="QString">XCURSOR_THEME=Human</value>
+    <value type="QString">XDG_CACHE_HOME=/home/jan/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/jan/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/opt/kde/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/jan/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=931900f06eea8f303cdf6ed64a8e4f57-1276406979.608407-642186257</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/jan/TEMP/ImageGuess/ImageGuess</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfigurations</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">Debug</value>
+   <value type="QString">Release</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+   <value key="mkspec" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildsteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.qmake</value>
+   <value type="QString">trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+   <value key="clean" type="bool">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>cleansteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>defaultFileEncoding</variable>
+  <value type="QByteArray">UTF-8</value>
+ </data>
+ <data>
+  <variable>project</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+</qtcreator>

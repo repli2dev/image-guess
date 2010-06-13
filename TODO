@@ -1,0 +1,5 @@
+TODOs
+--------------------------------------------------------------------------
+
+* Solve "hiding" of menubar better (menubar->hide() disable all shortcuts)
+* Edge problem - image is visible with certain windows sizes
