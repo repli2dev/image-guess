@@ -1,4 +1,13 @@
 README
 ---------------------------------------------------------------
 
-Installation
+Installation:
+
+	1. Run qmake
+	$ qmake
+	
+	2. Enter the directory and make
+	$ make
+	
+	3. Program is compiled in current directory and it can be run
+	$ ./ImageGuess
