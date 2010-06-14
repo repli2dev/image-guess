@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "helpdialog.h"
+#include "settingsdialog.h"
 #include <QFileDialog>
 #include <QMessageBox>
 #include <iostream>
@@ -8,6 +9,8 @@
 #include <QPixmap>
 #include <QPushButton>
 #include <QSettings>
+#include <QProcess>
+#include <QTimer>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,6 +23,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     restoreGeometry(settings.value("geometry").toByteArray());
     restoreState(settings.value("state").toByteArray());
+    this->inRow = settings.value("inRow",QVariant(10)).toInt();
+    this->inColumn = settings.value("inColumn",QVariant(10)).toInt();
 
     // Init
     this->fullscreen = FALSE;
@@ -33,22 +38,18 @@ MainWindow::MainWindow(QWidget *parent) :
     int k = 0;
 
     // Set minimum column size
-    for (int i = 0; i < 10; ++i) {
-        ui->buttonGrid->setColumnMinimumWidth(i,totalWidth/10);
-    }
-    for (int i = 0; i < 10; ++i) {
-        ui->buttonGrid->setRowMinimumHeight(i,totalHeight/10);
-    }
+    this->setButtonsMinimumSize();
 
     // Create buttons
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 10; ++j) {
-                 this->buttons[i][j] = new QPushButton(tr("%1").arg(++k));
-                 this->buttons[i][j]->setFixedHeight(totalHeight/10);
-                 this->buttons[i][j]->setFixedWidth(totalWidth/10);
-                 this->buttons[i][j]->hide();
-                 QObject::connect(this->buttons[i][j], SIGNAL(clicked()), buttons[i][j], SLOT(hide()));
-                 ui->buttonGrid->addWidget(this->buttons[i][j],i,j);
+    for (int i = 0; i < this->getInRow(); ++i) {
+        for (int j = 0; j < this->getInColumn(); ++j) {
+            //std::cout << "Adding on " << i << "," << j << " - " << totalHeight/this->getInColumn() << " x " << totalWidth/this->getInRow() << "  : " << k << std::endl;
+            this->buttons[i][j] = new QPushButton(tr("%1").arg(++k));
+            this->buttons[i][j]->setFixedHeight(totalHeight/this->getInColumn());
+            this->buttons[i][j]->setFixedWidth(totalWidth/this->getInRow());
+            this->buttons[i][j]->hide();
+            QObject::connect(this->buttons[i][j], SIGNAL(clicked()), buttons[i][j], SLOT(hide()));
+            ui->buttonGrid->addWidget(this->buttons[i][j],j,i);
         }
     }
 
@@ -57,6 +58,8 @@ void MainWindow::closeEvent(QCloseEvent *event){
     QSettings settings("JanDrabek","ImageGuess");
     settings.setValue("geometry", saveGeometry());
     settings.setValue("state", saveState());
+    settings.setValue("inRow", QVariant(this->getInRow()));
+    settings.setValue("inColumn", QVariant(this->getInColumn()));
 }
 
 MainWindow::~MainWindow()
@@ -64,20 +67,28 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::setButtonsMinimumSize()
+{
+    int totalWidth = ui->canvas->width();
+    int totalHeight = ui->canvas->height();
+
+    for (int i = 0; i < this->getInRow(); ++i) {
+        ui->buttonGrid->setColumnMinimumWidth(i,totalWidth/this->getInRow());
+    }
+    for (int i = 0; i < this->getInColumn(); ++i) {
+        ui->buttonGrid->setRowMinimumHeight(i,totalHeight/this->getInColumn());
+    }
+}
+
 void MainWindow::resizeEvent(QResizeEvent* e)
 {
     // Resize canvas
     ui->canvas->setGeometry(0,0,ui->centralWidget->width(),ui->centralWidget->height());
-    int totalWidth = ui->centralWidget->width();
+    int totalWidth = ui->canvas->width();
     int totalHeight = ui->canvas->height();
 
     // Set minimum column size
-    for (int i = 0; i < 10; ++i) {
-        ui->buttonGrid->setColumnMinimumWidth(i,totalWidth/10);
-    }
-    for (int i = 0; i < 10; ++i) {
-        ui->buttonGrid->setRowMinimumHeight(i,totalHeight/10);
-    }
+    this->setButtonsMinimumSize();
 
     // Resize picture if it's displayed
     if(this->files.count() > 0 && this->current != 0) {
@@ -85,11 +96,11 @@ void MainWindow::resizeEvent(QResizeEvent* e)
     }
 
     // Resize buttons
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 10; ++j) {
-                 this->buttons[i][j]->setFixedHeight(totalHeight/10);
-                 this->buttons[i][j]->setFixedWidth(totalWidth/10);
-             }
+    for (int i = 0; i < this->getInRow(); ++i) {
+        for (int j = 0; j < this->getInColumn(); ++j) {
+            this->buttons[i][j]->setFixedHeight(totalHeight/this->getInColumn());
+            this->buttons[i][j]->setFixedWidth(totalWidth/this->getInRow());
+        }
     }
 }
 
@@ -208,8 +219,8 @@ void MainWindow::on_actionNext_triggered()
 
 void MainWindow::showButtons(){
     // Show all buttons
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 10; ++j) {
+    for (int i = 0; i < this->getInRow(); ++i) {
+        for (int j = 0; j < this->getInColumn(); ++j) {
                  this->buttons[i][j]->show();
              }
     }
@@ -266,8 +277,8 @@ void MainWindow::on_actionAbout_triggered()
 
 void MainWindow::on_actionUnhide_triggered()
 {
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 10; ++j) {
+    for (int i = 0; i < this->getInRow(); ++i) {
+        for (int j = 0; j < this->getInColumn(); ++j) {
                  this->buttons[i][j]->hide();
              }
     }
@@ -300,4 +311,25 @@ void MainWindow::on_actionLast_triggered()
         this->showButtons();
         this->showPicture();
     }
+}
+void MainWindow::on_actionSettings_triggered()
+{
+    SettingsDialog *settings = new SettingsDialog;
+    settings->fillForm(this->getInRow(),this->getInColumn());
+    settings->exec();
+    if(settings->result() == QDialog::Accepted){
+        this->inRow = settings->getInRow();
+        this->inColumn = settings->getInColumn();
+        QMessageBox::information(this,tr("Restart needed"),tr("After editing of this setting restart of program is necessary."));
+        this->close();
+        QProcess::execute(QApplication::applicationFilePath());
+        QApplication::exit();
+    }
+}
+
+unsigned int MainWindow::getInRow(){
+    return this->inRow;
+}
+unsigned int MainWindow::getInColumn(){
+    return this->inColumn;
 }

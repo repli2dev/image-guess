@@ -9,5 +9,6 @@
         <file>images/go-first.png</file>
         <file>images/unhide.png</file>
         <file>images/view-fullscreen.png</file>
+        <file>images/preferences-desktop-launch-feedback.png</file>
     </qresource>
 </RCC>

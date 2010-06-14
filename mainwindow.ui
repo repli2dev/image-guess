@@ -170,7 +170,14 @@
     <addaction name="actionAbout_Qt"/>
     <addaction name="actionAbout"/>
    </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionSettings"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
    <addaction name="menuView"/>
    <addaction name="menuGo"/>
    <addaction name="menuHelp"/>
@@ -305,7 +312,7 @@
     <string>Unhide</string>
    </property>
    <property name="shortcut">
-    <string>Return</string>
+    <string>Backspace</string>
    </property>
   </action>
   <action name="actionAbout_Qt">
@@ -335,6 +342,11 @@
    </property>
    <property name="shortcut">
     <string>End</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
    </property>
   </action>
  </widget>

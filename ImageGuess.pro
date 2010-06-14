@@ -6,11 +6,14 @@ TARGET = ImageGuess
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
-    helpdialog.cpp
+    helpdialog.cpp \
+    settingsdialog.cpp
 HEADERS += mainwindow.h \
-    helpdialog.h
+    helpdialog.h \
+    settingsdialog.h
 FORMS += mainwindow.ui \
-    helpdialog.ui
+    helpdialog.ui \
+    settingsdialog.ui
 TRANSLATIONS += po/imageguess_cs_CZ.ts
 CODECFORTR = UTF-8
 RESOURCES += Icons.qrc

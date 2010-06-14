@@ -13,8 +13,9 @@ int main(int argc, char *argv[])
     // Translation encoding
     QTextCodec::setCodecForTr(QTextCodec::codecForName("utf8"));
     QTranslator t;
-    t.load(QDir::currentPath() + "/po/imageguess_" + QLocale::system().name());
+    t.load(QApplication::applicationDirPath() + "/po/imageguess_" + QLocale::system().name());
     a.installTranslator(&t);
+    a.addLibraryPath(QApplication::applicationDirPath());
 
     w.show();
     return a.exec();

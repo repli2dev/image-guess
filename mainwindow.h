@@ -18,11 +18,14 @@ public:
     void closeEvent(QCloseEvent *event);
     void hideAndEmpty();
     void showButtons();
+    unsigned int getInRow();
+    unsigned int getInColumn();
+    void setButtonsMinimumSize();
     ~MainWindow();
 
 protected:
     void changeEvent(QEvent *e);
-    QPushButton *buttons[10][10];
+    QPushButton *buttons[100][100];
     bool fullscreen;
 
 private:
@@ -30,8 +33,11 @@ private:
     QStringList files;  // List of images found in opened dir
     unsigned int current; // Offset in files array of current displayed image
     QString path;  // Name of opened directory
+    unsigned int inRow;
+    unsigned int inColumn;
 
 private slots:
+    void on_actionSettings_triggered();
     void on_actionLast_triggered();
     void on_actionFirst_triggered();
     void on_actionContents_triggered();
