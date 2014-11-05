@@ -11,7 +11,7 @@ What it can do:
  - Fullscreen mode
  - QT based so it should work on multiple platforms
 
- Download:
+Download:
   - [Windows](windows.zip)
 
-![](http://www.abclinuxu.cz/images/screenshots/8/5/158858-imageguess-mini-14244.png)  
+![](http://www.abclinuxu.cz/images/screenshots/8/5/158858-imageguess-14243.png)  
